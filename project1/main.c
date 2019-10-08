@@ -19,21 +19,19 @@ int main(){
 
 
 
-
-/*
 	args = analyzeArray(num2,100);
 
 	printf("sum : %d    ave : %d",args.sum,args.ave);
-*/
+
 	
 
-/*
+
 	//quick sort
 	num2_size = sizeof(num2)/sizeof(num2[0]);
 	gettimeofday(&begin,&tz);
 	quickSort(num2,num2_size,sizeof(int));
 	gettimeofday(&end,&tz);
-	printf("end_usec-bgin_usec:%d(ms)\n",end.tv_usec - begin.tv_usec);
+	printf("\n\nquick sort:\ntime = :%d(ms)\n",end.tv_usec - begin.tv_usec);
 	show(num2,num2_size);
 
 
@@ -42,9 +40,9 @@ int main(){
 	gettimeofday(&begin,&tz);
 	bubbleSort(num1,num1_size);
 	gettimeofday(&end,&tz);
-	printf("end_usec-bgin_usec:%d(ms)\n",end.tv_usec - begin.tv_usec);
+	printf("\n\nbubble sort:\ntime = :%d(ms)\n",end.tv_usec - begin.tv_usec);
 	show(num1,num1_size);
-*/
+
 
 
 	

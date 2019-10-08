@@ -1,13 +1,5 @@
 #include "main.h"
 
-/*
-
-	function : find the maximum,minimum,ave and sum
-
-	param : int *arr,int len
-
-	return : struct arg args
-*/
 struct arg analyzeArray(int *arr,int len){
 
 	struct arg args;
@@ -24,15 +16,7 @@ struct arg analyzeArray(int *arr,int len){
 	
 }
 
-/*
 
-	function : Calculate the sum of elements in an array
-
-	param : int *arr,int len
-
-	return : int sum
-	
-*/
 int sum(int *arr,int len){
 
 	int i,sum = 0;
@@ -44,15 +28,6 @@ int sum(int *arr,int len){
 }
 
 
-/*
-
-	function : Calculate the average of elements in an array
-
-	param : int *arr,int len
-
-	return : int ave
-	
-*/
 int ave(int *arr,int len){
 
 	return sum(arr,len)/len;
@@ -79,15 +54,7 @@ int max(int *arr,int len){
 	return max;
 }
 
-/*
 
-	function : Find the minimum in an array
-
-	param : int *arr,int len
-
-	return : int minimum
-	
-*/
 
 int min(int *arr,int len){
 
@@ -100,15 +67,7 @@ int min(int *arr,int len){
 }
 
 
-/*
 
-	function : Print all elements and arg in an array
-
-	param : int *arr,int len
-
-	return : none
-	
-*/
 
 void show(int *arr,int len){
 
@@ -125,15 +84,6 @@ void show(int *arr,int len){
 
 }
 
-/*
-
-	function : Write all elements to file
-
-	param : int *arr,int len,char* fileName
-
-	return : none
-	
-*/
 
 void writeArray(int *arr,int len,char *fileName){
 
@@ -142,7 +92,7 @@ void writeArray(int *arr,int len,char *fileName){
 
     if ( !fp )
     {
-		perror("fail to open file");
+		perror("fail to open filea");
         exit(-1);
     }
    
@@ -163,7 +113,7 @@ void readArray(int *arr,int len,char *fileName){
  
    if (!fp)
     {
-		perror("fail to open file");
+		perror("fail to open filea");
         exit(-1);
     }
  

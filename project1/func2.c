@@ -1,13 +1,6 @@
 #include "main.h"
 
-/*
 
-	function:create a random array
-
-	inlet param: int *p,int len;
-	return: none
-
-*/
 
 void createRandomArray(int *p,int len){
 	

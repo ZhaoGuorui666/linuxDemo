@@ -1,29 +1,12 @@
 #include "main.h"
 
-/*
 
-	function : call the qsort method 
-
-	param : int* arr,int len,int size
-
-	return : none
-	
-*/
 void quickSort(int* arr,int len,int size){
 	qsort(arr,len,size,compar);
 	writeArray(arr,len,"data.dat");
 }
 
 
-/*
-
-	function : sort the array with bubbleSort
-
-	param : int arr[],int len
-
-	return : none
-	
-*/
 void bubbleSort(int arr[],int len){
 
 	int i,j;
@@ -46,15 +29,7 @@ void bubbleSort(int arr[],int len){
 	writeArray(arr,len,"data.dat");
 }
 
-/*
 
-	function : swap two elements' value
-
-	param : int *a,int *b
-
-	return : none
-	
-*/
 void swap(int *a,int *b){
 
 	int temp = *a;
@@ -63,11 +38,7 @@ void swap(int *a,int *b){
 
 }
 
-/*
 
-	function : ........?
-	
-*/
 int compar(const void *a,const void *b){
 
 	int *aa = (int*) a,*bb = (int*) b;

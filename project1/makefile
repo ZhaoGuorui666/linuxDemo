@@ -1,5 +1,5 @@
-proj1:main.o func1.o func2.o func3.o
-	gcc main.o func1.o func2.o func3.o -o proj1
+demo:main.o func1.o func2.o func3.o
+	gcc main.o func1.o func2.o func3.o -o demo
 main.o:
 	gcc main.c -c
 func1.o:
