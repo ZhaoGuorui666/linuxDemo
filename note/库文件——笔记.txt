@@ -1,0 +1,13 @@
+exam1
+	staticlib
+		mylib.h 求最大 求和 打印 初始化
+		aoprand.c  求最大 求和
+		base.c 打印
+gcc -c aoprand.c base.c
+ar -rc libmytest.a aoprand.o base.o （-tv详细显示，-d删除）
+gcc test.c -o test -L. -lmytest
+ 
+
+exam2
+	test2.c
+gcc test2.c -o test2 -L路径 -lmytest -I路径

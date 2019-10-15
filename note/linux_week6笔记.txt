@@ -1,0 +1,68 @@
+week6
+	code
+		readme.txt
+		staticlib
+			localstatictest.c
+			readme.txt
+		dylib
+			localdytest.c
+			readme.txt
+	note
+
+
+dylib.h
+aoprand.c
+base.c
+localdytest.c
+
+gcc -shared -fPIC -o libdylib.so aoprand.c base.c
+gcc -o localtest localdytest.c ./libdylib.so
+./localdytest
+
+remote:
+gcc -o remotetest1 remotetest.c ../dynamiclib/libdylib.so -I../dynamiclib
+
+
+运行时动态加载：
+#include <dlfcn.h>
+#include <stdlib.h>
+
+定义void指针
+int a[];
+void *hd;
+char *error;
+void(*f1)();
+int (*f2)(),(*f3)();
+hd=dlopen("../dynamiclib/libdylib.so",RTLD_LAZY);
+if(!hd){
+	fprintf(stderr,"%s\n",dlerror);	
+	exit(1);
+}
+f1=dlsym(hd,"show");
+if((error=dlerror())!=NULL){
+	fprintf(stderr,"%s\n",dlerror);	
+	exit(1);
+}
+f2=dlsym(hd,"sum");
+if((error=dlerror())!=NULL){
+	fprintf(stderr,"%s\n",dlerror);	
+	exit(1);
+}
+f3=dlsym(hd,"max");
+if((error=dlerror())!=NULL){
+	fprintf(stderr,"%s\n",dlerror);	
+	exit(1);
+}
+
+
+
+****
+
+if(dlclose(hd)<0){
+	fprintf(stderr,"%s\n",dlerror);	
+	exit(1);
+}
+
+
+gcc -rdynamic -o  remotetest remotest.c -ldl -I../dynamiclib
+
