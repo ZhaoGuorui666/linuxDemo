@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+init	code/dynamiclib/exam1/dynamiclib/base.c	/^void init(int *p,int len){$/;"	f	language:C	signature:(int *p,int len)
+init	code/staticlib/exam/exam1/staticlib/base.c	/^void init(int *p,int len){$/;"	f	language:C	signature:(int *p,int len)
+main	code/dynamiclib/exam1/dynamiclib/test.c	/^int main(){$/;"	f	language:C
+main	code/dynamiclib/exam2/test.c	/^int main(){$/;"	f	language:C
+main	code/dynamiclib/exam2/test2.c	/^int main(){$/;"	f	language:C
+main	code/staticlib/exam/exam1/staticlib/test.c	/^int main(){$/;"	f	language:C
+main	code/staticlib/exam/exam2/test.c	/^int main(){$/;"	f	language:C
+max	code/dynamiclib/exam1/dynamiclib/aoprand.c	/^int max(int *a,int n){$/;"	f	language:C	signature:(int *a,int n)
+max	code/staticlib/exam/exam1/staticlib/aoprand.c	/^int max(int *a,int n){$/;"	f	language:C	signature:(int *a,int n)
+show	code/dynamiclib/exam1/dynamiclib/base.c	/^void show(int *a,int n){$/;"	f	language:C	signature:(int *a,int n)
+show	code/staticlib/exam/exam1/staticlib/base.c	/^void show(int *a,int n){$/;"	f	language:C	signature:(int *a,int n)
+sum	code/dynamiclib/exam1/dynamiclib/aoprand.c	/^int sum(int *a,int n){$/;"	f	language:C	signature:(int *a,int n)
+sum	code/staticlib/exam/exam1/staticlib/aoprand.c	/^int sum(int *a,int n){$/;"	f	language:C	signature:(int *a,int n)
